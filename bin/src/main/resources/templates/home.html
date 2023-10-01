@@ -8,7 +8,6 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<!-- <h1 th:text="${name}"></h1>-->
 <h1>Player System</h1>
 <table class="table table-dark">
     <thead>
@@ -29,12 +28,12 @@
         <td th:text="${temp.address}"></td>
         <td th:text="${temp.phone}"></td>
         <td>
-            <a class="mybtn btn btn-primary btn-lg active" th:href="@{/getplayer(playerId=${temp.id})}">Edit Player</a>
-            <a class="mybtn btn btn-danger btn-lg active" th:href="@{/removeplayer(playerId=${temp.id})}">Remove Player</a>
+            <a class="mybtn btn btn-primary btn-lg active" th:href="@{/getPlayer(playerId=${temp.id})}">Edit Player</a>
+            <a class="mybtn btn btn-danger btn-lg active" th:href="@{/removePlayer(playerId=${temp.id})}">Remove Player</a>
         </td>
     </tr>
     </tbody>
 </table>
-<a class="btn btn-primary btn-lg active add" th:href="@{/playerform}"  >Add Player</a>
+<a class="btn btn-primary btn-lg active add" th:href="@{/player-form}"  >Add Player</a>
 </body>
 </html>
